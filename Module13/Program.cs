@@ -10,6 +10,7 @@ namespace Module13
     {
         static void Main(string[] args)
         {
+            Console.WriteLine("\nПервый массив: ");
             List<int> myList = new List<int>();
             Random rand = new Random();
             for (int i = 0; i < 20; i++)
@@ -46,15 +47,13 @@ namespace Module13
             Random rand1 = new Random();
             Console.WriteLine();
             Console.WriteLine();
-            Console.WriteLine();
+            Console.WriteLine("Второй массив:");
             for (int i = 0; i < 20; i++)
             {
                 myList1.Add(rand.Next(1000, 9999)/10.0);
                 Console.Write(myList1[i] + " ");
             }
             double average = myList1.Sum() / myList1.Count;
-            Console.WriteLine();
-            Console.WriteLine();
             Console.WriteLine();
             Console.WriteLine("Элементы больше среднего {0} :", average);
             foreach (var item in myList1)
